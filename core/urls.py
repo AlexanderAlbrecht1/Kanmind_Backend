@@ -23,6 +23,6 @@ urlpatterns = [
     path('api/', include('board_app.api.urls')),
     # path('api/email-check/', include('???')),
     path('api/login/', include('user_auth_app.api.urls')),
-    path('api/registration/', include('user_auth_app.api.urls')),
+    path('api/', include('user_auth_app.api.urls')),
     path('api-auth', include('rest_framework.urls')),
 ]
